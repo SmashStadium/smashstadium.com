@@ -1,0 +1,263 @@
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+	background-color: #000;
+	margin: 0;
+	padding: 0;	
+}
+
+#wrapper {
+	background-color: #444;
+	position: relative;
+
+	/* size & centering */
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+
+	/* text */
+	color: #eee;
+}
+
+/* header */
+.header {
+	display: flex;
+	flex-direction: column;
+	background-color: #333;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	height: 120px;
+}
+.header div {
+	
+}
+
+/* navbar */
+.navbar {
+	display: flex;
+	background-color: #333;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+}
+.navbar a {
+	color: white;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* main, & left/right */
+.main {
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-left {
+	flex: 30%;
+}
+.main-right {
+	flex: 70%;
+}
+
+/* footer */
+.footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #333;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	height: 120px;
+}
+.footer div {
+	
+}
+
+@media screen and (max-width: 700px) {
+	.main {   
+		flex-direction: column;
+	}
+}
+
+/* sidebar */
+.game-info {
+	margin: 12px;
+}
+
+/* thumbnails */
+.thumb {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: middle;
+	width: 18px; 
+	height: 18px;
+	background-size: contain !important;
+	background-position: center !important;
+}
+
+/* thumbnails */
+.thumb-tiny {
+	width: 12px; 
+	height: 12px;
+}
+
+/* platforms */
+.thumb-gcn {
+	background: url("https://vignette.wikia.nocookie.net/nintendo/images/2/2d/GamecubeLogo.png/revision/latest?cb=20180502055001&path-prefix=pl") no-repeat;
+}
+.thumb-dolphin {
+	background: url("https://pbs.twimg.com/profile_images/571205490353270784/v-FDSByE.png") no-repeat;
+}
+.thumb-wii {
+	background: url("https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/b/b3/Wii_Console.png/1200px-Wii_Console.png") no-repeat;
+}
+/* proofs */
+.thumb-youtube {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_(2017).svg/60px-YouTube_full-color_icon_(2017).svg.png") no-repeat;
+}
+.thumb-twitch {
+	background: url("https://i.imgur.com/kaRc9z1.png") no-repeat;
+}
+
+
+/* comments */
+.thumb-comment {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/d/d5/Symbol_comment.png") no-repeat;
+}
+
+/* flags */
+.thumb-flag-usa {
+	background: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/60px-Flag_of_the_United_States.svg.png") no-repeat;	
+}
+.thumb-flag-germany {
+	background: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/60px-Flag_of_Germany.svg.png") no-repeat;	
+}
+.thumb-flag-lebanon {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/60px-Flag_of_Lebanon.svg.png") no-repeat;	
+}
+
+/* tooltip, position handled by jquery*/
+.tooltip {
+	display: none;
+	position:absolute;
+	width: 200px;
+	padding: 12px;
+	pointer-events: none;
+	/******************/
+	background-color: rgba(0,0,0,0.8);
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	/******************/
+	border-width: 4px;
+	border-color: #eee;
+    border-style: none;
+    border-left: solid;
+}
+
+/* char gfx */
+.char-link {
+	background-image: url("https://i.imgur.com/pkPtkKR.png");
+}
+
+/* char data */
+
+.char-select {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.char {
+	min-width:200px;
+	min-height:120px;
+	margin:8px;
+	padding: 8px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 1px 5px rgba(255,255,255,0);
+	transition: box-shadow 0.1s;
+}
+
+.char:hover {
+	box-shadow: 0 1px 5px rgba(255,255,255,0.4);
+}
+
+.char-title {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;	
+	font-size: 24px;
+	background-color: rgba(0,0,0, 0.2);
+	padding: 4px;
+}
+
+.char-region-switch {
+	float: right;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;	
+	font-size: 14px;
+	margin: 4px;
+	user-select: none;
+	-moz-user-select: none;
+}
+
+.char-region {
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #333;
+	color:#777;
+	cursor: pointer;
+	float: left;
+}
+
+.char-region:hover {
+	background-color: #555;
+	color:#999;
+}
+
+.char-region-active {
+	background-color: #777 !important;
+	color:#eee !important;
+}
+
+/* characters table */
+.char-table {
+	display: table;  
+	table-layout: auto;
+	width: 100%;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.char-row {
+	background-color: rgba(0,0,0, 0.8);
+	display: table-row;
+	width: auto;
+	clear: both;
+	line-height: 26px;
+}
+.char-row-sub {
+	background-color: rgba(0,0,0, 0.3);
+	display: table-row;
+	width: auto;
+	clear: both;
+	line-height: 18px;
+	font-size: 12px;
+}
+.char-col {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.char-playername {
+	text-align: left;
+}
+.char-score {
+	text-align: right;
+}
