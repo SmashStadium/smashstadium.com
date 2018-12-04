@@ -62,3 +62,12 @@ $(".char-region").click(function () {
     $switch.children().removeClass("char-region-active");
     $(this).addClass("char-region-active");
 });
+
+$(".char-collapse").change(function() {
+    var classes = ".char-table, .char-region-switch";
+        if(this.checked) {
+            $(classes).hide();
+        } else {
+            $(classes).show();
+        }
+    });

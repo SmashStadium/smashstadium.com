@@ -174,11 +174,10 @@ body {
 
 .char {
 	min-width:200px;
-	min-height:120px;
 	margin:8px;
 	padding: 8px;
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 	background-repeat: no-repeat;
 	box-shadow: 0 1px 5px rgba(255,255,255,0);
 	transition: box-shadow 0.1s;
