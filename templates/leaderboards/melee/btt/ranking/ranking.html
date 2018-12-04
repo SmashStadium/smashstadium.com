@@ -1,0 +1,247 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'leaderboards/ranking.css' %}">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>Super Smash Brothers Melee - Break The Targets (Link)</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="header">
+			<div>header</div>
+			<div>header</div>
+			<div>header</div>
+			<div>header</div>
+		</div>
+		<div class="navbar">
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+		</div> <!-- navbar -->
+		<div class="main">
+			<div class="main-left">
+				<div class="game-info">
+					<p>
+						game info, small summary of rules, other stuff, etc will go here. probably an image of the character and game, there's various ways to utilize this space.
+					</p>
+					<p>
+						<em>"... drop-down with extra filter options or something"</em> - KM
+					</p>
+				</div>
+			</div> <!-- main-left -->
+			<div class="main-right">
+				<div class="ldb-table">
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row ldb-header">
+						<div class="ldb-rank ldb-col">Rank</div>
+						<div class="ldb-player-country ldb-col">Country</div>
+						<div class="ldb-player-name ldb-col">Player</div>
+						<div class="ldb-record ldb-col">Time (IGT)</div>
+						<div class="ldb-specs ldb-col">Specs</div>
+						<div class="ldb-date ldb-col">Date</div>
+						<div class="ldb-proof ldb-col">Proof</div>
+						<div class="ldb-comment ldb-col">Comments</div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#1</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-lebanon"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">Savestate</div>
+						<div class="ldb-record ldb-col">00:03.52</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">April 17th, 2018</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=Ulx5L-GZ0p8">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col">
+							<div class="thumb thumb-comment ldb-comment-inner">
+								<div class="ldb-comment-none">
+									i cant believe i got wr. omgggggggggggg. still am gonna grind for 3.50 eventually, just gotta find the time to degen it out lmao.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#1</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-germany"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">sockdude1</div>
+						<div class="ldb-record ldb-col">00:03.52</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-dolphin"></div></div>
+						<div class="ldb-date ldb-col">April 19th, 2018</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=lGqyW6F5pnQ">
+								<div class="thumb thumb-twitch"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col"></div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#1</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">chaos6</div>
+						<div class="ldb-record ldb-col">00:03.52</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-wii"></div></div>
+						<div class="ldb-date ldb-col">May 13th, 2018</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col"></div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#4</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">example person</div>
+						<div class="ldb-record ldb-col">00:03.53</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">May 3th, 2016</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col">
+							<div class="thumb thumb-comment ldb-comment-inner">
+								<div class="ldb-comment-none">
+									test display content
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#5</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">example person</div>
+						<div class="ldb-record ldb-col">00:03.55</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">June 3rd, 2006</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col"></div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#5</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">example person</div>
+						<div class="ldb-record ldb-col">00:03.55</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">June 3rd, 2006</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col"></div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#5</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">example person</div>
+						<div class="ldb-record ldb-col">00:03.55</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">June 3rd, 2006</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col"></div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#5</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">example person</div>
+						<div class="ldb-record ldb-col">00:03.55</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">June 3rd, 2006</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col"></div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#5</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">example person</div>
+						<div class="ldb-record ldb-col">00:03.55</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">June 3rd, 2006</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col">
+							<div class="thumb thumb-comment ldb-comment-inner">
+								<div class="ldb-comment-none">
+									test display content
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ------------ ROW ------------ -->
+					<div class="ldb-row">
+						<div class="ldb-rank ldb-col">#5</div>
+						<div class="ldb-player-country ldb-col">
+							<div class="thumb thumb-flag-usa"></div>
+						</div>
+						<div class="ldb-player-name ldb-col">example person</div>
+						<div class="ldb-record ldb-col">00:03.55</div>
+						<div class="ldb-specs ldb-col">v1.02 <div class="thumb thumb-gcn"></div></div>
+						<div class="ldb-date ldb-col">June 3rd, 2006</div>
+						<div class="ldb-proof ldb-col">
+							<a target=_blank href="https://www.youtube.com/watch?v=4ig2Qhb2VlU">
+								<div class="thumb thumb-youtube"></div>
+							</a>
+						</div>
+						<div class="ldb-comment ldb-col"></div>
+					</div>
+				</div> <!-- table -->
+			</div> <!-- main-right -->
+		</div> <!-- main -->
+		<div class="footer">
+			<div>footer</div>
+			<div>footer</div>
+			<div>footer</div>
+			<div>footer</div>
+		</div> <!-- footer -->
+	</div> <!-- wrapper -->
+	<script src="{% static 'leaderboards/ranking.js' %}"></script>
+</body>
+</html>

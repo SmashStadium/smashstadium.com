@@ -9,3 +9,15 @@ def ultimateMenu(request):
 	
 def ultimateMenuHRC(request):
     return render(request, 'leaderboards/ultimate/hrc/hrc.html')
+
+def meleeMenu(request):
+    return render(request, 'leaderboards/melee/melee.html')
+	
+def meleeMenuBTT(request):
+    return render(request, 'leaderboards/melee/btt/btt.html')
+
+def meleeMenuBTTRanking(request):
+    return render(request, 'leaderboards/melee/btt/ranking/ranking.html')
+	
+def meleeMenuHRC(request):
+	return render(request, 'leaderboards/melee/hrc/hrc.html')
