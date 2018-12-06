@@ -1,23 +1,469 @@
+{% load static %}
 <!DOCTYPE html>
- 
-<html lang="en">
- 
+<html>
 <head>
-    <title>Super Smash Brothers Melee - Break The Targets Leaderboard</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'leaderboards/characterselect.css' %}">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>Smash Stadium - SSBM BTT (Link)</title>
 </head>
- 
 <body>
- 
-<div>
-	<h1>Super Smash Brothers Melee Break The Targets Leaderboard</h1>
-    <h2>Please select a character</h2>
-    <p>Doctor Mario</p>
-    <p>Mario</p>
-    <p><a href="/leaderboards/melee/btt/ranking">Link</a><p>
-    <p>Bowser</p>
- 
-</div>
- 
+	<div id="wrapper">
+		<div class="header">
+			<div>header</div>
+			<div>header</div>
+			<div>header</div>
+			<div>header</div>
+		</div>
+		<div class="navbar">
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+			<a href="#">Link</a>
+		</div> <!-- navbar -->
+		<div class="main">
+			<div class="main-left">
+				<div class="game-info">
+					<p>
+						game info, small summary of rules, other stuff, etc will go here. probably an image of the game, there's various ways to utilize this space.
+					</p>
+					<p>
+						<input type="checkbox" class="char-collapse"> collapse chars
+					</p>
+				</div>
+			</div> <!-- main-left -->
+			<div class="main-right">
+				<div class="char-select">
+					<!-- ---------- character ---------- -->
+					<div class="char char-link" onclick="location.href='/leaderboards/melee/btt/ranking'">
+							<div class="char-title">Link</div>
+							<div class="char-table">
+								<div class="char-row">
+									<div class="char-col char-rank">#1</div>
+									<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+									<div class="char-col char-playername">Savestate</div>
+									<div class="char-col char-score">3.52 IGT</div>
+								</div>
+								<div class="char-row-sub">
+									<div class="char-col char-rank">#1</div>
+									<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+									<div class="char-col char-playername">Sockdude1</div>
+									<div class="char-col char-score">3.52 IGT</div>								
+								</div>
+								<div class="char-row-sub">
+									<div class="char-col char-rank">#1</div>
+									<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+									<div class="char-col char-playername">chaos6</div>
+									<div class="char-col char-score">3.52 IGT</div>
+								</div>
+							</div>
+							<div class="char-region-switch">
+								<div class="char-region char-region-active">NTSC</div>
+								<div class="char-region">PAL</div>
+							</div>
+						</a>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+					<!-- ---------- character ---------- -->
+					<div class="char char-link">
+						<div class="char-title">Link</div>
+						<div class="char-table">
+							<div class="char-row">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-flag-usa"></div></div>
+								<div class="char-col char-playername">Savestate</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-lebanon"></div></div>
+								<div class="char-col char-playername">Sockdude1</div>
+								<div class="char-col char-score">3.52 IGT</div>								
+							</div>
+							<div class="char-row-sub">
+								<div class="char-col char-rank">#1</div>
+								<div class="char-col"><div class="thumb thumb-tiny thumb-flag-germany"></div></div>
+								<div class="char-col char-playername">chaos6</div>
+								<div class="char-col char-score">3.52 IGT</div>
+							</div>
+						</div>
+						<div class="char-region-switch">
+							<div class="char-region char-region-active">NTSC</div>
+							<div class="char-region">PAL</div>
+						</div>
+					</div> 
+				</div> <!-- character select -->
+			</div> <!-- main-right -->
+		</div> <!-- main -->
+		<div class="footer">
+			<div>footer</div>
+			<div>footer</div>
+			<div>footer</div>
+			<div>footer</div>
+		</div> <!-- footer -->
+	</div> <!-- wrapper -->
+	<script src="{% static 'leaderboards/characterselect.js' %}"></script>
 </body>
-     
 </html>
