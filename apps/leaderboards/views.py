@@ -1,23 +1,25 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
+from django.shortcuts import render
 
-def index (request):
+def index(request):
     return render(request, 'leaderboards/leaderboards.html')
-	
-def ultimateMenu(request):
-    return render(request, 'leaderboards/ultimate/ultimate.html')
-	
-def ultimateMenuHRC(request):
-    return render(request, 'leaderboards/ultimate/hrc/hrc.html')
 
-def meleeMenu(request):
-    return render(request, 'leaderboards/melee/melee.html')
-	
-def meleeMenuBTT(request):
-    return render(request, 'leaderboards/melee/btt/btt.html')
+def game(request, game):
+    context = { game: game }
+    return render(request, 'leaderboards/game/game.html', context)
 
-def meleeMenuBTTRanking(request):
-    return render(request, 'leaderboards/melee/btt/ranking/ranking.html')
-	
-def meleeMenuHRC(request):
-	return render(request, 'leaderboards/melee/hrc/hrc.html')
+def mode(request, game, mode):
+    context = { 
+        game: game,
+        mode: mode
+    }
+    return render(request, 'leaderboards/game/mode/mode.html', context)
+
+def character(request, game, mode, character):
+    context = { 
+        game: game,
+        mode: mode,
+        character: character
+    }
+    return render(request, 'leaderboards/game/mode/character/character.html', context)
